@@ -1,0 +1,250 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+body{
+    background-color: #242423 !important;
+}
+:root{
+    --colorviolet : #6B0BAA ;
+    --colorsilver : #bfc1c2 ;
+}
+/* ================================================================================
+====================================================================================*/
+.main{
+    width: 95%;
+    height: 100vh;
+    margin:auto !important;
+    background: linear-gradient( 90deg , #242423 , transparent , #242423), url(images/backGroundOne.png);
+}
+section{
+    height: 100vh;
+}
+.input-form{
+    width: 80%;
+    max-width:300px;
+    padding: 20px !important;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px 10px 30px 10px;
+}
+h1{
+    color: var(--colorviolet) !important;
+}
+.input-form input{
+    background-color: black;
+    padding-left: 10px !important;
+    color: white;
+    height: 35px;
+    border: 2px solid var(--colorviolet);
+    border-radius: 10px;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input-form button{
+    width: fit-content ;
+    margin: auto !important;
+    padding: 5px 10px !important;
+    margin: 0px 5px !important;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+#bupdate , #badd {
+    background: linear-gradient(135deg , var(--colorviolet) 5% , white 30% 70%, var(--colorviolet)95%) ;
+    border: 2px solid var(--colorviolet);
+    transition: background 0.2s ease-in ;
+}
+#bupdate:hover , #badd:hover{
+    background: var(--colorviolet) !important;
+    color : white ;
+}
+#bdelete {
+    background: linear-gradient(135deg , red 5% , white 30% 70%, red 95%) ;
+    border: 2px solid rgb(87, 5, 5);
+    transition: background 0.2s ease-in ;
+}
+#bdelete:hover{
+    background: red !important;
+    color : white ;
+}
+#bupdate , #bdelete{
+    display: none;
+}
+/* ================================ */
+#outPut{
+    padding: 15px !important;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    background: rgb(0, 0, 0 ,0.4);
+    border-radius: 20px;
+}
+#outPut::-webkit-scrollbar {
+  width: 2px;
+}
+#outPut::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent 5%,var(--colorsilver)5%);
+  width:2px;
+  border-radius: 2px;
+}
+
+#outPut > div{
+    min-width: 200px;
+    max-width: 250px;
+    width: 20%;
+    height: 200px;
+    background-color: black;
+    margin: auto !important;
+    padding: 5px 5px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid var(--colorsilver);
+    border-radius: 20px 8px 20px 8px;
+}
+#outPut i{
+    color: var(--colorviolet);
+}
+#outPut h6{
+    color: var(--colorviolet);
+    font-size: 18px;
+}
+#outPut h5 , p{
+    color: var(--colorsilver);
+}
+.edit{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: var(--colorsilver);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 99;
+    opacity: 0;
+}
+.edit i{
+    color: black !important;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ====================================== media query ================ */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { }
